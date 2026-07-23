@@ -1,0 +1,128 @@
+{
+  "student": {
+    "name": "A. Strano",
+    "studentNumber": "5918200",
+    "programme": "Bachelor Information Technology",
+    "year": "Programme Propedeutic Year 2025/2026"
+  },
+  "semesters": [
+    {
+      "name": "Semester 1",
+      "achievedCredits": 30,
+      "totalCredits": 60,
+      "requirementsMet": true,
+      "courses": [
+        {
+          "code": "BUA_I01",
+          "title": "Business Administration",
+          "ects": 5,
+          "result": "-",
+          "achieved": 5,
+          "subItems": [
+            { "code": "BUATI01", "title": "Theory BUA", "result": "6.9" },
+            { "code": "BUABI01", "title": "Business Visit", "result": "PA" },
+            { "code": "BUAGI01", "title": "Management Game", "result": "PA" }
+          ]
+        },
+        {
+          "code": "DBS1_I01",
+          "title": "Database Systems 1",
+          "ects": 5,
+          "result": "7.1",
+          "achieved": 5,
+          "subItems": [
+            { "code": "DBS1TI01", "title": "Theory DBS1", "result": "7.1" },
+            { "code": "DBSPI01", "title": "Practical DBS1", "result": "7.1" }
+          ]
+        },
+        {
+          "code": "PRC1_I01",
+          "title": "Programming Concepts 1",
+          "ects": 10,
+          "result": "-",
+          "achieved": 10,
+          "subItems": [
+            { "code": "PRC1TI01", "title": "Theory PRC1", "result": "7.6" },
+            { "code": "PRC1PI01", "title": "Practical PRC1", "result": "PA" }
+          ]
+        },
+        {
+          "code": "PRJ1_I01",
+          "title": "Project 1: Web Application Development",
+          "ects": 10,
+          "result": "7.1",
+          "achieved": 10,
+          "subItems": [
+            { "code": "PRJ11I01", "title": "Analysis and Design", "result": "7.3" },
+            { "code": "PRJ12I01", "title": "Realisation", "result": "6.8" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Semester 2",
+      "achievedCredits": 50,
+      "totalCredits": 60,
+      "requirementsMet": false,
+      "courses": [
+        {
+          "code": "AADE_I01",
+          "title": "Analysis and Design",
+          "ects": 5,
+          "result": "-",
+          "achieved": 5,
+          "subItems": [
+            { "code": "AADETI01", "title": "Theory AADE", "result": "9.0" },
+            { "code": "AADEPI01", "title": "Practical AADE", "result": "PA" }
+          ]
+        },
+        {
+          "code": "DVPR_I01",
+          "title": "Development Processes",
+          "ects": 5,
+          "result": "7.5",
+          "achieved": 5,
+          "subItems": []
+        },
+        {
+          "code": "ISK_I01",
+          "title": "International Skills",
+          "ects": 5,
+          "result": "PA",
+          "achieved": 5,
+          "subItems": []
+        },
+        {
+          "code": "PRC2_I01",
+          "title": "Programming Concepts 2",
+          "ects": 5,
+          "result": "-",
+          "achieved": 5,
+          "subItems": [
+            { "code": "PRC2TI01", "title": "Theory PRC2", "result": "7.0" },
+            { "code": "PRC2PI01", "title": "Practical PRC2", "result": "PA" }
+          ]
+        },
+        {
+          "code": "PRJ2_I01",
+          "title": "Project 2: Business Application Development",
+          "ects": 10,
+          "result": "5.2",
+          "achieved": 0,
+          "subItems": []
+        },
+        {
+          "code": "LACO_D04",
+          "title": "Language Courses: Dutch A1 International",
+          "ects": 0,
+          "result": "8.0",
+          "achieved": 0,
+          "subItems": [
+            { "code": "LACOWD04", "title": "LACO Written", "result": "8.5" },
+            { "code": "LACOOD04", "title": "LACO Oral", "result": "7.5" }
+          ]
+        }
+      ]
+    }
+  ]
+}
