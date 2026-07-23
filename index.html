@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Progress - Accedi</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <div class="login-brand">
+      <span class="brand-mark">P</span>
+      <span class="brand-name">Progress</span>
+    </div>
+    <p class="login-subtitle">Accedi per vedere i tuoi risultati</p>
+
+    <form id="login-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" autocomplete="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required />
+
+      <button type="submit">Accedi</button>
+    </form>
+
+    <p id="error-message" class="error-message" hidden></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

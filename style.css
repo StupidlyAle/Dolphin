@@ -1,0 +1,298 @@
+:root {
+  --purple-dark: #4b2e63;
+  --purple: #5c3878;
+  --purple-light: #efe9f3;
+  --text: #2b2b2b;
+  --text-muted: #6b6b6b;
+  --border: #d9d3e0;
+  --green: #2f7a3d;
+  --red: #b3391f;
+  --bg: #f6f4f8;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ---------- Login page ---------- */
+
+.login-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, var(--purple-dark), var(--purple) 60%, #7a4f96);
+  padding: 20px;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.brand-mark {
+  background: var(--purple-dark);
+  color: #fff;
+  font-weight: 700;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--purple-dark);
+}
+
+.login-subtitle {
+  color: var(--text-muted);
+  margin: 6px 0 24px;
+  font-size: 14px;
+}
+
+#login-form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 14px 0 6px;
+  color: var(--text);
+}
+
+#login-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+#login-form input:focus {
+  outline: 2px solid var(--purple);
+  outline-offset: 1px;
+}
+
+#login-form button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: var(--purple-dark);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background: var(--purple);
+}
+
+.error-message {
+  color: var(--red);
+  font-size: 13px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+/* ---------- Dashboard ---------- */
+
+.topbar {
+  background: var(--purple-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-brand .brand-mark {
+  background: #fff;
+  color: var(--purple-dark);
+}
+
+.topbar-brand .brand-name {
+  color: #fff;
+  font-size: 18px;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+}
+
+#logout-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#logout-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.loading {
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 60px;
+}
+
+.student-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.student-card h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+  color: var(--purple-dark);
+}
+
+.student-card p {
+  margin: 2px 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.semester-block {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.semester-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background: var(--purple-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.semester-header h2 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--purple-dark);
+}
+
+.semester-credits {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.semester-credits.met {
+  color: var(--green);
+}
+
+.semester-credits.not-met {
+  color: var(--red);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead th {
+  background: var(--purple-dark);
+  color: #fff;
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+thead th.numeric,
+td.numeric {
+  text-align: center;
+}
+
+tbody tr.course-row {
+  font-weight: 600;
+  border-top: 1px solid var(--border);
+}
+
+tbody tr.sub-row td {
+  color: var(--text-muted);
+  font-weight: 400;
+  padding-left: 28px;
+  font-size: 13px;
+}
+
+td {
+  padding: 8px 14px;
+}
+
+.result-pass {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.result-fail {
+  color: var(--red);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 18px 10px 40px;
+  }
+
+  thead th,
+  td {
+    padding: 8px 8px;
+    font-size: 12.5px;
+  }
+
+  tbody tr.sub-row td {
+    padding-left: 16px;
+  }
+}
