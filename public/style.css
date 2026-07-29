@@ -48,17 +48,16 @@ body {
   margin-bottom: 4px;
 }
 
-.brand-mark {
-  background: var(--purple-dark);
-  color: #fff;
-  font-weight: 700;
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
+.brand-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.brand-logo-dark {
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
 }
 
 .brand-name {
@@ -133,11 +132,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.topbar-brand .brand-mark {
-  background: #fff;
-  color: var(--purple-dark);
 }
 
 .topbar-brand .brand-name {
