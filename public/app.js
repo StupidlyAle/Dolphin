@@ -1,4 +1,4 @@
-// --- Pagina di login ---
+// --- Login page ---
 const loginForm = document.getElementById("login-form");
 
 if (loginForm) {
@@ -18,20 +18,20 @@ if (loginForm) {
       const data = await res.json();
 
       if (!res.ok) {
-        errorEl.textContent = data.error || "Errore di accesso";
+        errorEl.textContent = data.error || "Login error";
         errorEl.hidden = false;
         return;
       }
 
       window.location.href = "/results.html";
     } catch (err) {
-      errorEl.textContent = "Impossibile contattare il server";
+      errorEl.textContent = "Unable to reach the server";
       errorEl.hidden = false;
     }
   });
 }
 
-// --- Pagina dei risultati ---
+// --- Results page ---
 const content = document.getElementById("content");
 
 if (content) {
@@ -52,7 +52,7 @@ async function init() {
 
   const res = await fetch("/api/results");
   if (!res.ok) {
-    content.innerHTML = "<p class='loading'>Impossibile caricare i risultati.</p>";
+    content.innerHTML = "<p class='loading'>Unable to load results.</p>";
     return;
   }
 
@@ -82,8 +82,8 @@ function renderResults(data) {
   let html = `
     <div class="student-card">
       <h1>${student.name}</h1>
-      <p>Numero studente: ${student.studentNumber}</p>
-      <p>Programma: ${student.programme}</p>
+      <p>Student number: ${student.studentNumber}</p>
+      <p>Programme: ${student.programme}</p>
       <p>${student.year}</p>
     </div>
   `;
@@ -91,8 +91,8 @@ function renderResults(data) {
   semesters.forEach((sem) => {
     const metClass = sem.requirementsMet ? "met" : "not-met";
     const metLabel = sem.requirementsMet
-      ? "Requisiti soddisfatti"
-      : "Requisiti non ancora soddisfatti";
+      ? "Requirements met"
+      : "Requirements not yet met";
 
     html += `
       <section class="semester-block">
@@ -105,11 +105,11 @@ function renderResults(data) {
         <table>
           <thead>
             <tr>
-              <th>Codice</th>
-              <th>Corso</th>
+              <th>Code</th>
+              <th>Course</th>
               <th class="numeric">ECTS</th>
-              <th class="numeric">Risultato</th>
-              <th class="numeric">Ottenuti</th>
+              <th class="numeric">Result</th>
+              <th class="numeric">Achieved</th>
             </tr>
           </thead>
           <tbody>
