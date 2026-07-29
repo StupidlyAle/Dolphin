@@ -218,46 +218,14 @@ body {
 .semester-credits {
   font-size: 13px;
   font-weight: 600;
-  color: var(--text-muted);
 }
 
-.download-btn {
-  margin-top: 14px;
-  padding: 9px 16px;
-  border: 1px solid var(--purple-dark);
-  border-radius: 6px;
-  background: #fff;
-  color: var(--purple-dark);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
+.semester-credits.met {
+  color: var(--green);
 }
 
-.download-btn:hover {
-  background: var(--purple-light);
-}
-
-.overall-status {
-  font-style: italic;
+.semester-credits.not-met {
   color: var(--red);
-  font-size: 14px;
-  margin-top: 4px;
-}
-
-@media print {
-  .topbar,
-  .download-btn {
-    display: none;
-  }
-
-  .content {
-    max-width: none;
-    padding: 0;
-  }
-
-  body {
-    background: #fff;
-  }
 }
 
 table {
