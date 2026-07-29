@@ -6,10 +6,8 @@
 
 module.exports = [
   {
-    username: "astrano",
-    // password di default: "changeme123"
-    // CAMBIALA generando un nuovo hash prima di usare l'app sul serio!
-    passwordHash: "$2a$10$6LDcGitARxNOvJTomDYWo.JPG/co6l4PGIAwV8IDY9F7mI47IsQh.",
+    username: "5918200",
+    passwordHash: "$2a$10$9KE0BbY9skj.2ejhu2sqk.EcOpkmSvnKLseotNIUmpSo0zY3nCnni",
     displayName: "A. Strano"
   }
 ];
